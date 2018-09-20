@@ -24,4 +24,8 @@ server:
   servlet:
     context-path: /dc
   port: 8088
+#  # security 使能
+#security:
+#  basic:
+#    enabled: false
 
