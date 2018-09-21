@@ -18,7 +18,7 @@ public class Swagger {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.leanin.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.leanin.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

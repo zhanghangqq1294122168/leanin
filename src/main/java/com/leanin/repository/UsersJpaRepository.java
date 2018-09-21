@@ -13,6 +13,6 @@ public interface UsersJpaRepository extends JpaRepository<Users, Long> {
     /**
      * 根据名称模糊查询分页
      * */
-    Page<Users> findByUserNameLike(String userName, Pageable pageable);
+    Page<Users> findByUserNameContaining(String userName, Pageable pageable);
 
 }
