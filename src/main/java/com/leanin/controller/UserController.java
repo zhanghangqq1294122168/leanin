@@ -60,7 +60,6 @@ public class UserController {
     @ResponseBody
     @PostMapping("findByPageAndParams")
     public Result findByPageAndParams(Users users, @PageableDefault Pageable pageable) {
-        System.out.println();
         return Result.ok(usersService.findByPageAndParams(users, pageable));
     }
 }
